@@ -35,6 +35,7 @@ export default class TopLevelBuilds extends Component {
                 `/api/getTopLevelBuildNames?type=Test&AQAvitCert=true`
             );
         }
+        console.log(results);
         const builds = {};
         for (let i = 0; results && i < results.length; i++) {
             const url = results[i]._id.url;

@@ -56,8 +56,10 @@ export const fetchData = async (url) => {
             method: 'get',
         });
         const jsonResponse = await response.json();
+        console.log(jsonResponse)
         return jsonResponse;
     } catch (e) {
+        console.log(e)
         console.error(e);
     }
 };

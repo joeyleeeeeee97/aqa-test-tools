@@ -190,6 +190,7 @@ export default class Settings extends Component {
                 },
                 body: JSON.stringify({ data }),
             };
+            console.log("posting" + postData)
 
             const upsertBuildList = await fetch(
                 `/api/upsertBuildList`,

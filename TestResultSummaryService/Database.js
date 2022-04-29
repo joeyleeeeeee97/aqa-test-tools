@@ -24,9 +24,11 @@ let db;
     const dbConnect = await MongoClient.connect(url, {
         useUnifiedTopology: true,
     });
-    db = dbConnect.db('exampleDb');
+    db = dbConnect.db('dragonwell');
+    console.log(db)
     for (let collection of ['testResults', 'output', 'auditLogs', 'user']) {
         try {
+            console.log(collection)
             await db.createCollection(collection);
         } catch (e) {
             // do nothing. The collection may already exist

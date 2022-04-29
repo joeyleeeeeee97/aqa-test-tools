@@ -6,8 +6,8 @@ export default {
                 x: 0,
                 y: 0,
                 settings: {
-                    serverSelected: 'AdoptOpenJDK',
-                    title: 'https://ci.adoptopenjdk.net',
+                    serverSelected: 'Dragonwell',
+                    title: 'http://ci.dragonwell-jdk.io/',
                 },
             },
         ],
